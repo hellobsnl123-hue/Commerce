@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cart — AUREL</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="container nav-wrap">
+
+        <a href="index.html" class="logo">
+            AU<span>R</span>EL
+        </a>
+
+        <nav class="desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <a href="shop.html" class="nav-icon">⌕</a>
+            <a href="shop.html" class="nav-icon">♡</a>
+
+            <a href="cart.html" class="cart-link">
+                Cart <span class="cart-count">0</span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Open menu">
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+<div class="mobile-menu">
+
+    <button class="mobile-close">×</button>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart <span class="cart-count">0</span></a>
+    </nav>
+
+</div>
+
+
+<main>
+
+    <section class="cart-section">
+
+        <div class="container">
+
+            <div class="cart-heading">
+
+                <div>
+                    <p class="eyebrow dark">YOUR SELECTION</p>
+
+                    <h1>
+                        Shopping<br>
+                        <span>cart.</span>
+                    </h1>
+                </div>
+
+                <a href="shop.html" class="text-link dark-link">
+                    Continue shopping →
+                </a>
+
+            </div>
+
+
+            <div
+                class="cart-layout"
+                id="cartLayout"
+            >
+
+                <div class="cart-items" id="cartItems"></div>
+
+
+                <aside class="cart-summary">
+
+                    <div class="summary-header">
+                        <span>Order summary</span>
+                        <span id="summaryCount">0 items</span>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <strong id="cartSubtotal">₹0</strong>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Delivery</span>
+                        <span id="cartDelivery">Free</span>
+                    </div>
+
+                    <div class="summary-total">
+                        <span>Total</span>
+                        <strong id="cartTotal">₹0</strong>
+                    </div>
+
+                    <button
+                        class="btn btn-dark checkout-btn"
+                    >
+                        Proceed to checkout
+                        <span>↗</span>
+                    </button>
+
+                    <button
+                        class="clear-cart"
+                        id="clearCart"
+                    >
+                        Clear cart
+                    </button>
+
+                    <p class="secure-note">
+                        ✓ Secure frontend demo checkout
+                    </p>
+
+                </aside>
+
+            </div>
+
+
+            <div
+                class="empty-cart"
+                id="emptyCart"
+                hidden
+            >
+                <span>∅</span>
+                <h2>Your cart is empty.</h2>
+                <p>
+                    Looks like you haven't discovered your next
+                    favourite object yet.
+                </p>
+
+                <a href="shop.html" class="btn btn-primary">
+                    Explore collection
+                    <span>↗</span>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <div>
+                <a href="index.html" class="logo footer-logo">
+                    AU<span>R</span>EL
+                </a>
+
+                <p>
+                    Future-facing objects for<br>
+                    everyday life.
+                </p>
+            </div>
+
+            <div class="footer-links">
+
+                <div>
+                    <span>Explore</span>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <div>
+                    <span>Support</span>
+                    <a href="contact.html">Help</a>
+                    <a href="cart.html">Orders</a>
+                    <a href="contact.html">Returns</a>
+                </div>
+
+                <div>
+                    <span>Social</span>
+                    <a href="#">Instagram</a>
+                    <a href="#">Pinterest</a>
+                    <a href="#">X / Twitter</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 AUREL Studio</span>
+            <span>Designed for what's next.</span>
+        </div>
+
+    </div>
+
+</footer>
+
+<div class="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+  </html>
