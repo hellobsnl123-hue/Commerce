@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop — AUREL</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container nav-wrap">
+
+        <a href="index.html" class="logo">
+            AU<span>R</span>EL
+        </a>
+
+        <nav class="desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="shop.html" class="active">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <a href="shop.html" class="nav-icon">⌕</a>
+            <a href="shop.html" class="nav-icon">♡</a>
+
+            <a href="cart.html" class="cart-link">
+                Cart <span class="cart-count">0</span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Open menu">
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+    </div>
+</header>
+
+<div class="mobile-menu">
+
+    <button class="mobile-close">×</button>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart <span class="cart-count">0</span></a>
+    </nav>
+
+</div>
+
+
+<main>
+
+    <section class="shop-hero">
+        <div class="container">
+
+            <p class="eyebrow">THE COMPLETE EDIT</p>
+
+            <h1>
+                Everything<br>
+                <span>worth having.</span>
+            </h1>
+
+            <p>
+                Explore the complete AUREL collection.
+            </p>
+
+        </div>
+    </section>
+
+
+    <section class="shop-section">
+
+        <div class="container">
+
+            <div class="shop-toolbar">
+
+                <div class="search-box">
+                    <span>⌕</span>
+                    <input
+                        type="search"
+                        id="productSearch"
+                        placeholder="Search products..."
+                    >
+                </div>
+
+                <button class="filter-toggle">
+                    Filters <span>+</span>
+                </button>
+
+                <select id="sortProducts" aria-label="Sort products">
+                    <option value="featured">Featured</option>
+                    <option value="price-low">Price: Low to high</option>
+                    <option value="price-high">Price: High to low</option>
+                    <option value="rating">Highest rated</option>
+                    <option value="name">Name A-Z</option>
+                </select>
+
+            </div>
+
+
+            <div class="shop-layout">
+
+                <aside class="filter-panel">
+
+                    <div class="filter-heading">
+                        <strong>Filters</strong>
+                        <button id="clearFilters">Clear</button>
+                    </div>
+
+                    <div class="filter-group">
+
+                        <span>Category</span>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="category"
+                                value="All"
+                                checked
+                            >
+                            All
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="category"
+                                value="Tech"
+                            >
+                            Tech
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="category"
+                                value="Time"
+                            >
+                            Time
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="category"
+                                value="Carry"
+                            >
+                            Carry
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="category"
+                                value="Audio"
+                            >
+                            Audio
+                        </label>
+
+                    </div>
+
+
+                    <div class="filter-group">
+
+                        <span>Maximum price</span>
+
+                        <div class="range-value">
+                            ₹<strong id="priceValue">50,000</strong>
+                        </div>
+
+                        <input
+                            type="range"
+                            id="priceRange"
+                            min="1000"
+                            max="50000"
+                            step="500"
+                            value="50000"
+                        >
+
+                    </div>
+
+                </aside>
+
+
+                <div class="shop-results">
+
+                    <div class="results-top">
+                        <span id="resultCount">0 products</span>
+                        <span class="collection-status">
+                            AUREL / 2026
+                        </span>
+                    </div>
+
+                    <div
+                        class="product-grid"
+                        id="shopProducts"
+                    ></div>
+
+                    <div
+                        class="empty-state"
+                        id="emptyProducts"
+                        hidden
+                    >
+                        <span>∅</span>
+                        <h3>No products found.</h3>
+                        <p>Try changing your filters or search.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <div>
+                <a href="index.html" class="logo footer-logo">
+                    AU<span>R</span>EL
+                </a>
+
+                <p>
+                    Future-facing objects for<br>
+                    everyday life.
+                </p>
+            </div>
+
+            <div class="footer-links">
+
+                <div>
+                    <span>Explore</span>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <div>
+                    <span>Support</span>
+                    <a href="contact.html">Help</a>
+                    <a href="cart.html">Orders</a>
+                    <a href="contact.html">Returns</a>
+                </div>
+
+                <div>
+                    <span>Social</span>
+                    <a href="#">Instagram</a>
+                    <a href="#">Pinterest</a>
+                    <a href="#">X / Twitter</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 AUREL Studio</span>
+            <span>Designed for what's next.</span>
+        </div>
+
+    </div>
+
+</footer>
+
+<div class="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
