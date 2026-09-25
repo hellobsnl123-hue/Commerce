@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact — AUREL</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="container nav-wrap">
+
+        <a href="index.html" class="logo">
+            AU<span>R</span>EL
+        </a>
+
+        <nav class="desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <a href="shop.html" class="nav-icon">⌕</a>
+            <a href="shop.html" class="nav-icon">♡</a>
+
+            <a href="cart.html" class="cart-link">
+                Cart <span class="cart-count">0</span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Open menu">
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+<div class="mobile-menu">
+
+    <button class="mobile-close">×</button>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart <span class="cart-count">0</span></a>
+    </nav>
+
+</div>
+
+
+<main>
+
+    <section class="contact-hero">
+
+        <div class="container">
+
+            <p class="eyebrow">GET IN TOUCH</p>
+
+            <h1>
+                Let's start a
+                <span>conversation.</span>
+            </h1>
+
+        </div>
+
+    </section>
+
+
+    <section class="section contact-section">
+
+        <div class="container contact-grid">
+
+            <div class="contact-info reveal">
+
+                <p class="eyebrow">CONTACT AUREL</p>
+
+                <h2>
+                    Questions,
+                    ideas or just
+                    saying hello?
+                </h2>
+
+                <p>
+                    Our team is here to help with products,
+                    orders and everything in between.
+                </p>
+
+                <div class="contact-details">
+
+                    <div>
+                        <span>Email</span>
+                        <a href="mailto:hello@aurel.store">
+                            hello@aurel.store
+                        </a>
+                    </div>
+
+                    <div>
+                        <span>Hours</span>
+                        <p>Mon–Fri / 9:00–18:00</p>
+                    </div>
+
+                    <div>
+                        <span>Location</span>
+                        <p>Chennai / India</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <form
+                class="contact-form reveal"
+                id="contactForm"
+                novalidate
+            >
+
+                <div class="form-row">
+
+                    <div class="form-field">
+                        <label for="name">Name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Your name"
+                            required
+                        >
+
+                        <small class="error-message"></small>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Email</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="you@example.com"
+                            required
+                        >
+
+                        <small class="error-message"></small>
+                    </div>
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="subject">Subject</label>
+
+                    <input
+                        type="text"
+                        id="subject"
+                        placeholder="How can we help?"
+                        required
+                    >
+
+                    <small class="error-message"></small>
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="message">Message</label>
+
+                    <textarea
+                        id="message"
+                        rows="6"
+                        placeholder="Tell us what's on your mind..."
+                        required
+                    ></textarea>
+
+                    <small class="error-message"></small>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                >
+                    Send message
+                    <span>↗</span>
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <section class="faq-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">QUICK ANSWERS</p>
+                    <h2>Frequently<br><span>asked.</span></h2>
+                </div>
+
+            </div>
+
+
+            <div class="faq-list">
+
+                <details>
+                    <summary>
+                        How long does delivery take?
+                        <span>+</span>
+                    </summary>
+
+                    <p>
+                        Standard delivery typically takes
+                        2–5 business days.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>
+                        Can I return an item?
+                        <span>+</span>
+                    </summary>
+
+                    <p>
+                        Yes. Eligible products can be returned
+                        within 30 days.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>
+                        Is checkout secure?
+                        <span>+</span>
+                    </summary>
+
+                    <p>
+                        This competition demo uses a frontend-only
+                        checkout experience. No real payment is processed.
+                    </p>
+                </details>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <div>
+                <a href="index.html" class="logo footer-logo">
+                    AU<span>R</span>EL
+                </a>
+
+                <p>
+                    Future-facing objects for<br>
+                    everyday life.
+                </p>
+            </div>
+
+            <div class="footer-links">
+
+                <div>
+                    <span>Explore</span>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <div>
+                    <span>Support</span>
+                    <a href="contact.html">Help</a>
+                    <a href="cart.html">Orders</a>
+                    <a href="contact.html">Returns</a>
+                </div>
+
+                <div>
+                    <span>Social</span>
+                    <a href="#">Instagram</a>
+                    <a href="#">Pinterest</a>
+                    <a href="#">X / Twitter</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 AUREL Studio</span>
+            <span>Designed for what's next.</span>
+        </div>
+
+    </div>
+
+</footer>
+
+<div class="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
