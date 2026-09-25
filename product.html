@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product — AUREL</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container nav-wrap">
+
+        <a href="index.html" class="logo">
+            AU<span>R</span>EL
+        </a>
+
+        <nav class="desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <a href="shop.html" class="nav-icon">⌕</a>
+            <a href="shop.html" class="nav-icon">♡</a>
+
+            <a href="cart.html" class="cart-link">
+                Cart <span class="cart-count">0</span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Open menu">
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </div>
+</header>
+
+<div class="mobile-menu">
+
+    <button class="mobile-close">×</button>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart <span class="cart-count">0</span></a>
+    </nav>
+
+</div>
+
+
+<main>
+
+    <section class="product-detail-section">
+
+        <div class="container">
+
+            <div class="breadcrumb">
+                <a href="shop.html">Shop</a>
+                <span>/</span>
+                <span id="productCategory">Product</span>
+            </div>
+
+
+            <div class="product-detail">
+
+                <div class="product-gallery">
+
+                    <div class="gallery-main">
+                        <img id="productMainImage" src="" alt="">
+                        <span class="gallery-label">AUREL / 01</span>
+                    </div>
+
+                    <div class="gallery-thumbs" id="galleryThumbs"></div>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <p class="eyebrow" id="detailCategory">
+                        COLLECTION
+                    </p>
+
+                    <h1 id="productName">
+                        Product
+                    </h1>
+
+                    <div class="product-rating">
+                        <span id="productStars">★★★★★</span>
+                        <span id="productRating">4.9</span>
+                        <span>·</span>
+                        <span>128 reviews</span>
+                    </div>
+
+                    <div class="product-price-row">
+
+                        <strong id="productPrice">
+                            ₹0
+                        </strong>
+
+                        <del id="productOldPrice"></del>
+
+                        <span
+                            class="discount-badge"
+                            id="productDiscount"
+                        >
+                            -20%
+                        </span>
+
+                    </div>
+
+                    <p
+                        class="product-description"
+                        id="productDescription"
+                    ></p>
+
+
+                    <div class="product-option">
+
+                        <span>Quantity</span>
+
+                        <div class="quantity-control">
+
+                            <button
+                                class="quantity-minus"
+                                aria-label="Decrease quantity"
+                            >
+                                −
+                            </button>
+
+                            <span id="productQuantity">1</span>
+
+                            <button
+                                class="quantity-plus"
+                                aria-label="Increase quantity"
+                            >
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="product-actions">
+
+                        <button
+                            class="btn btn-primary add-detail-cart"
+                        >
+                            Add to cart
+                            <span>↗</span>
+                        </button>
+
+                        <button
+                            class="btn btn-dark buy-now"
+                        >
+                            Buy now
+                        </button>
+
+                        <button
+                            class="wishlist-detail"
+                            aria-label="Add to wishlist"
+                        >
+                            ♡
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-benefits">
+
+                        <div>
+                            <span>↗</span>
+                            <div>
+                                <strong>Fast delivery</strong>
+                                <small>2–5 business days</small>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span>↻</span>
+                            <div>
+                                <strong>Easy returns</strong>
+                                <small>30-day return window</small>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span>✓</span>
+                            <div>
+                                <strong>Secure checkout</strong>
+                                <small>Protected payment</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="spec-section">
+
+                <div>
+                    <p class="eyebrow">DETAILS</p>
+                    <h2>Made to<br>make sense.</h2>
+                </div>
+
+                <div class="spec-grid">
+
+                    <div>
+                        <span>01</span>
+                        <strong>Material</strong>
+                        <p id="specMaterial">Premium construction</p>
+                    </div>
+
+                    <div>
+                        <span>02</span>
+                        <strong>Finish</strong>
+                        <p id="specFinish">Signature finish</p>
+                    </div>
+
+                    <div>
+                        <span>03</span>
+                        <strong>Warranty</strong>
+                        <p>2 years</p>
+                    </div>
+
+                    <div>
+                        <span>04</span>
+                        <strong>Origin</strong>
+                        <p>Designed globally</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <section class="related-section">
+
+                <div class="section-heading">
+
+                    <div>
+                        <p class="eyebrow dark">YOU MAY ALSO LIKE</p>
+                        <h2>More from<br>the collection.</h2>
+                    </div>
+
+                    <a href="shop.html" class="text-link dark-link">
+                        View all →
+                    </a>
+
+                </div>
+
+                <div
+                    class="product-grid"
+                    id="relatedProducts"
+                ></div>
+
+            </section>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <div>
+                <a href="index.html" class="logo footer-logo">
+                    AU<span>R</span>EL
+                </a>
+
+                <p>
+                    Future-facing objects for<br>
+                    everyday life.
+                </p>
+            </div>
+
+            <div class="footer-links">
+
+                <div>
+                    <span>Explore</span>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <div>
+                    <span>Support</span>
+                    <a href="contact.html">Help</a>
+                    <a href="cart.html">Orders</a>
+                    <a href="contact.html">Returns</a>
+                </div>
+
+                <div>
+                    <span>Social</span>
+                    <a href="#">Instagram</a>
+                    <a href="#">Pinterest</a>
+                    <a href="#">X / Twitter</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 AUREL Studio</span>
+            <span>Designed for what's next.</span>
+        </div>
+
+    </div>
+
+</footer>
+
+<div class="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
